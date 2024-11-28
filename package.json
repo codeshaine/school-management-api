@@ -1,0 +1,27 @@
+{
+  "name": "school-api",
+  "version": "1.0.0",
+  "description": "simple api",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.11.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "vitest": "^2.1.6"
+  }
+}
