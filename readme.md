@@ -13,7 +13,7 @@ This API allows you to manage school data. You can add a school and fetch a list
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/school-management-api.git
+   git clone https://github.com/codeshaine/school-management-api.git
    cd school-management-api
    ```
 
