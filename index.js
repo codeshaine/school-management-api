@@ -35,7 +35,7 @@ app.post("/addSchool", (req, res) => {
   pool.query(
     query,
     [data.name, data.address, data.latitude, data.longitude],
-    (err, _result) => {
+    (err) => {
       if (err) {
         console.error("DATBASE ERROR:", err);
         return res.status(400).json({
@@ -69,7 +69,7 @@ app.get("/listSchools", (req, res) => {
     FROM school 
     ORDER BY distance`;
 
-  pool.query(query, [data.latitude, data.longitude, data.latitude], (err) => {
+  pool.query(query, [data.latitude, data.longitude, data.latitude], (err,result) => {
     if (err) {
       console.error("DATBASE ERROR:", err);
       return res.status(400).json({
